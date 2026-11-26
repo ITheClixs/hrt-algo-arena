@@ -1,0 +1,30 @@
+# Python / tooling
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+.ipynb_checkpoints/
+.jupyter/
+.jupyter_ystore.db
+.DS_Store
+.remember/
+.env
+.env.*
+
+# Data belongs to HRT: never commit it (only the README stays)
+data/*
+!data/README.md
+
+# Upload files stay local; the ledger is tracked
+submissions/*
+!submissions/ledger.csv
+!submissions/README.md
+
+# Model caches (FinBERT etc.)
+.cache/
+models/
